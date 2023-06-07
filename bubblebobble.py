@@ -17,16 +17,6 @@ pygame.display.set_caption("Bubble Bobble")
 
 #주인공 객체 생성
 player_rect = pygame.Rect((screen_width-75)/22.5, screen_height-150, 75, 75)
-
-walkRight = pygame.image.load('playerright.png')
-walkRight = pygame.transform.scale(walkRight, (75,75))   
-walkLeft = pygame.image.load('playerleft.png')
-walkLeft = pygame.transform.scale(walkLeft, (75,75))
-openmouthRight = pygame.image.load('playermouthright.png')
-openmouthRight = pygame.transform.scale(openmouthRight, (75,75))
-openmouthLeft = pygame.image.load('playermouthleft.png')
-openmouthLeft = pygame.transform.scale(openmouthLeft, (75,75))  
-
 player_sheet = pygame.transform.scale(pygame.image.load('player.png'), (273 * 4, 140 * 4))
 player_sheet_flipped = pygame.transform.flip(player_sheet, True, False)
 
